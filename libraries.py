@@ -3,7 +3,7 @@ import subprocess
 # List of required libraries
 libraries = ['hashlib', 'ecdsa', 'web3', 'ccxt']
 
-# Install each library using pip
+# Install each library using pip:
 for library in libraries:
     try:
         subprocess.check_call(['pip', 'install', library])
