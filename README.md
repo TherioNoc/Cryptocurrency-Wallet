@@ -1,4 +1,4 @@
-# Cryptocurrency-Wallet
+# Cryptocurrency Wallet
 
 
 Before using ```cryptowallet.py```, you need install required libraries from ```libraries.py```
