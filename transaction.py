@@ -9,12 +9,12 @@ class Transaction:
         self.signature = None
 
     def sign_transaction(self, private_key):
-        # Sign the transaction using the private key
+        # Sign the transaction using the private key:
         signing_key = ecdsa.SigningKey.from_string(bytes.fromhex(private_key), curve=ecdsa.SECP256k1)
         signature = signing_key.sign(self.get_transaction_hash())
         self.signature = signature.hex()
 
     def get_transaction_hash(self):
-        # Calculate the hash of the transaction data
+        # Calculate the hash of the transaction data:
         transaction_data = self.sender + self.recipient + str(self.amount)
         return hashlib.sha256(transaction_data.encode()).digest()
