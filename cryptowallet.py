@@ -6,7 +6,7 @@ wallet = Wallet()
 wallet.generate_wallet()
 wallet.display_wallet_info()
 
-# Create a transaction
+# Create a transaction:
 recipient = "Recipient's Address"
 amount = 10
 coin_symbol = "BTC"  # Specify the cryptocurrency coin symbol
