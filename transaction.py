@@ -15,6 +15,6 @@ class Transaction:
         self.signature = signature.hex()
 
     def get_transaction_hash(self):
-        # Calculate the hash of the transaction data:
+        # Calculate the hash of the transaction data
         transaction_data = self.sender + self.recipient + str(self.amount)
         return hashlib.sha256(transaction_data.encode()).digest()
